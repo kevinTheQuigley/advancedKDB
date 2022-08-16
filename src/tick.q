@@ -5,10 +5,17 @@ system "l ",cdir,"/src/sym.q";
 system "l ",cdir,"/kdb-tick-master/tick/u.q"; 
 system "l ",cdir,"/log4q-master/log4q.q";
 //Below may be tricky, watch .cron jobs
+system "l ",cdir,"/kdb-common/src/type.q";
+system "l ",cdir,"/kdb-common/src/time.q";
+system "l ",cdir,"/kdb-common/src/util.q";
+system "l ",cdir,"/kdb-common/src/ns.q";
+system "l ",cdir,"/kdb-common/src/convert.q";
 system "l ",cdir,"/kdb-common/src/cron.q";
+system "l ",cdir,"/kdb-common/src/cargs.q";
 system "l ",cdir,"/kdb-common/src/log.q";
+system "l ",cdir,"/kdb-common/src/time.util.q";
 
-symFile     : "sym";
+symFile: "sym";
 logDir : cdir,"/logs";
 rawDir : logDir,"/raw";
 
@@ -30,7 +37,6 @@ ld:{[date]
      hopen L
   };
 
-.u.tick[symFile;rawDir];
 tick:{[symFile;rawDir]
      init[];
     / if[not min(`time~ first 1#key flip value@)each t;
@@ -75,30 +81,29 @@ logger:{
 
 set_tick:1; 
 
-if[set_tick;
-    tp_tick:{
-       pub'[t;value each t];
-       @[`.;t;@[;`sym;`g#]0#];
-       i::j;
-       ts .z.D;
-       };
-    upd:{[t;x]
-      if[not -16=type first first x;
-         if[d<"d"$a:.z.P;
-            .z.ts[]
-           ];
-         a:"n"$a;
-         x:$[0>type first x;
-             a,x;
-             (enlist(count first x)#a),x]
-        ];
-      t insert x;
-      tbl_counter[t]+:1;
-      if[l;
-         l enlist (`upd;t;x);
-         j+:1];
-       }
-   ];
+//if[set_tick;
+tp_tick:{
+   pub'[t;value each t];
+   @[`.;t;@[;`sym;`g#]0#];
+   i::j;
+   ts .z.D;
+   };
+upd:{[t;x]
+  if[not -16=type first first x;
+     if[d<"d"$a:.z.P;
+        .z.ts[]
+       ];
+     a:"n"$a;
+     x:$[0>type first x;
+         a,x;
+         (enlist(count first x)#a),x]
+    ];
+  t insert x;
+  tbl_counter[t]+:1;
+  if[l;
+     l enlist (`upd;t;x);
+     j+:1];
+ }
 
 
 if[not system"t";
@@ -124,6 +129,14 @@ if[not system"t";
     ];
 
 \d .
+
+
 .u.tick[symFile;rawDir];
-.cron.add[".u.tp_tick[]";0;`repeat;`long$1];
-.cron.add[".u.logger[]";5;`repeat;`long$60];
+
+//setting smallest cron timer interval
+//.cron.cfg.timerInterval:59;
+
+
+
+.cron.add[	`.u.tp_tick	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
+.cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
