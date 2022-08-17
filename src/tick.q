@@ -1,5 +1,5 @@
-
-cdir:-4_ first (system "pwd")
+//cdir:-4_ first (system "pwd")
+cdir:"/home/ubuntu/KQKDB";
 
 system "l ",cdir,"/src/sym.q";
 system "l ",cdir,"/kdb-tick-master/tick/u.q"; 
