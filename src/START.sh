@@ -20,18 +20,6 @@ mkdir -p $DATADIR
 mkdir -p $DATADIR/logs
 mkdir -p $DATADIR/logs/pids
 
-#function RUN_ALL(){ 
-#    main tp
-#    sleep 2
-#    main fh 
-#    sleep 2 
-#    main rdb1
-#    sleep 2 
-#    main rdb2
-#    sleep 2
-#    main cep 
-#}
-
 
 function RUN_ALL(){ 
 	startTP
@@ -121,4 +109,20 @@ case $doit in
   n|N) echo no ;; 
   *) echo dont know ;; 
 esac
+
+if [ $doit == "n" ]
+then
+	echo -e "Please enter a two letter word if you would like to start a specific process\n ie for tp -tp \n for filehandler- fh\n for rdb1- r1 \n for rdb2- r2\n for cep-ce "
+	read -n2 -ep " " s1
+
+	case $s1 in 
+		tp) startTP ;;
+		fh) startFH ;;
+		r1) startRDB ;;
+		r2) startRDB2 ;;
+		ce) startCEP ;;
+		*) echo "No input detected, please try again";;
+	esac
+fi
+
 exit 0

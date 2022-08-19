@@ -83,54 +83,33 @@ function STOP_ALL(){
         stopCEP
 }
 
-#function main(){
-#	case $1 in
-#		tp)
-#			kill `cat ${DATADIR}/logs/pids/tp.pid`
-#			rm ${DATADIR}/logs/pids/tp.pid
-#			;;
-#		fh)
-#			kill `cat ${DATADIR}/logs/pids/feed.pid`
-#			rm ${DATADIR}/logs/pids/feed.pid
-#			;;
-#		rdb1)
-#			kill `cat ${DATADIR}/logs/pids/rdb1.pid`
-#			rm ${DATADIR}/logs/pids/rdb1.pid
-#			;;
-#		rdb2)
-#			kill `cat ${DATADIR}/logs/pids/rdb2.pid`
-#			rm ${DATADIR}/logs/pids/rdb2.pid
-#			;;
-#		cep)
-#			kill `cat ${DATADIR}/logs/pids/cep.pid`
-#			rm ${DATADIR}/logs/pids/cep.pid
-#			;;
-#    *)
-#	esac
-#}
 
-read -n1 -p "Do you want to kill all processes? [A-ALL,T-Test]" doit
+read -n1 -p "Do you want to kill all processes? [y - yes| n - no]" doit
 
 
 case $doit in
-    A|a)
+    Y|y)
     STOP_ALL| echo -e "Killing all processes"
     ;;
-    ONE)
-    main $2
-    ;;
-    T)
-    IS_ACTIVE TP ${DATADIR}/logs/pids/tp.pid
-	sleep 1
-	IS_ACTIVE FH ${DATADIR}/logs/pids/feed.pid
-	sleep 1  
-	IS_ACTIVE RDB1 ${DATADIR}/logs/pids/rdb1.pid
-	sleep 1
-	IS_ACTIVE RDB2 ${DATADIR}/logs/pids/rdb2.pid
-	sleep 1 
-	IS_ACTIVE CEP  ${DATADIR}/logs/pids/cep.pid
+    *)
+	    echo -e "\n Not stopping all processes \n"
     ;;
   * )
   esac
+
+if [ $doit == "n" ]
+then
+        echo -e "Please enter a two letter word if you would like to stop a specific process\n ie for tp -tp \n for filehandler- fh\n for rdb1- r1 \n for rdb2- r2\n for cep-ce "
+        read -n2 -ep " " s1
+
+        case $s1 in
+                tp) stopTP ;;
+                fh) stopFH ;;
+                r1) stopRDB ;;
+                r2) stopRDB2 ;;
+                ce) stopCEP ;;
+                *) echo "No input detected, please try again";;
+        esac
+fi
 
 exit 0
