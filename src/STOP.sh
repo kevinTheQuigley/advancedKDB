@@ -83,8 +83,8 @@ function STOP_ALL(){
         stopCEP
 }
 
-
-read -n1 -p "Do you want to kill all processes? [y - yes| n - no]" doit
+echo -e "Do you want to kill all processes? [y - yes| n - no] \n" 
+read -n1 -p " " doit
 
 
 case $doit in

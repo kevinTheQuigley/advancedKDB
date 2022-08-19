@@ -3,8 +3,9 @@ if[not "w"=first string .z.o;system "sleep 1"];
 
 upd:{[t;x] if[t in tables[];t insert x]};
 
+//Need the location of the tickerplant and the other rdb port
 / get the ticker plant and history ports, defaults are 5010,5012
-.u.x:.z.x,(count .z.x)_(":6868";":5530");
+.u.x:.z.x,(count .z.x)_(":6800";":6806");
 
 / end of day: save, clear, hdb reload
 .u.end:{
@@ -23,5 +24,5 @@ upd:{[t;x] if[t in tables[];t insert x]};
 
 
 / connect to ticker plant for (schema;(logcount;log))
-.u.rep .(hopen `$"::6868")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+.u.rep .(hopen `$"::6800")"((.u.sub[`Trade;`];.u.sub[`Quote;`]);`.u `i`L)";
 

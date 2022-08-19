@@ -7,12 +7,12 @@ export Q=${QHOME}
 
 export DATADIR=$KDIR
 
-export PORT_TP=5510
-export PORT_RDB1=5511
-export PORT_RDB2=5512
-export PORT_HDB=5513
-export PORT_CEP=5611
-export PORT_FH=5610
+export PORT_TP=6800
+export PORT_RDB1=6805
+export PORT_RDB2=6806
+export PORT_HDB=6810
+export PORT_CEP=6811
+export PORT_FH=6812
 
 export SCHEMA="sym"
 export TPTIMER=100 
