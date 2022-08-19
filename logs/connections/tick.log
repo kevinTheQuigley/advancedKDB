@@ -1,0 +1,11 @@
+INFO	[2022.07.22D21:11:58.504071000]:PID=686429:tick.q: USER: `ubuntu; CONNECTION: 0i; CLOSED
+INFO	[2022.07.22D21:11:58.504220000]:PID=686429:tick.q: 
+ key: used has value: 448096 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 8343740416 
+ key: syms has value: 781 
+ key: symw has value: 39919
+

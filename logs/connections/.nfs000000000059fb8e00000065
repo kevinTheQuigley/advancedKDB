@@ -1,0 +1,1089 @@
+INFO	[2019.10.22D16:16:57.962099000]:PID=2231:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2019.10.22D16:16:57.962132000]:PID=2231:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.22D16:16:57.962232000]:PID=2231:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2019.10.22D16:16:57.962265000]:PID=2231:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.22D16:16:59.981121000]:PID=2231:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2019.10.22D16:16:59.981154000]:PID=2231:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.22D16:17:02.255651000]:PID=2231:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2019.10.22D16:17:02.255685000]:PID=2231:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.22D16:17:03.474967000]:PID=2231:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2019.10.22D16:17:03.474999000]:PID=2231:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.22D16:19:55.335649000]:PID=2231:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; CLOSED
+INFO	[2019.10.22D16:19:55.335690000]:PID=2231:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.25D14:36:20.634850000]:PID=2966:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2019.10.25D14:36:20.634888000]:PID=2966:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.25D14:36:20.634992000]:PID=2966:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2019.10.25D14:36:20.635018000]:PID=2966:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.25D14:36:22.625352000]:PID=2966:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2019.10.25D14:36:22.625391000]:PID=2966:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.25D14:36:24.778718000]:PID=2966:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2019.10.25D14:36:24.778775000]:PID=2966:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2019.10.25D14:36:26.022950000]:PID=2966:src/tick.q: USER: `mcelvogc; CONNECTION: 12i; OPEN
+INFO	[2019.10.25D14:36:26.022987000]:PID=2966:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 101115342848 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:21:24.513363000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.15D09:21:24.513412000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:21:24.513555000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.15D09:21:24.513589000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:21:24.956254000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.15D09:21:24.956312000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:21:27.125229000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.15D09:21:27.125276000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:21:28.449633000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.15D09:21:28.449689000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:23:44.186918000]:PID=22044:src/tick.q: USER: `c; CONNECTION: 12i; OPEN
+INFO	[2020.05.15D09:23:44.186973000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:23:53.030450000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 12i; CLOSED
+INFO	[2020.05.15D09:23:53.030536000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D09:27:10.451511000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; CLOSED
+INFO	[2020.05.15D09:27:10.451556000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:09:40.318625000]:PID=22044:src/tick.q: USER: `; CONNECTION: 8i; OPEN
+INFO	[2020.05.15D10:09:40.318679000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:09:57.902343000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; CLOSED
+INFO	[2020.05.15D10:09:57.902405000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:10:25.715340000]:PID=22044:src/tick.q: USER: `; CONNECTION: 8i; OPEN
+INFO	[2020.05.15D10:10:25.715391000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:10:26.045564000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; CLOSED
+INFO	[2020.05.15D10:10:26.045626000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:13:00.778471000]:PID=22044:src/tick.q: USER: `; CONNECTION: 8i; OPEN
+INFO	[2020.05.15D10:13:00.778521000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:13:20.129946000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; CLOSED
+INFO	[2020.05.15D10:13:20.129997000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:14:24.831158000]:PID=22044:src/tick.q: USER: `; CONNECTION: 8i; OPEN
+INFO	[2020.05.15D10:14:24.831229000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:14:44.191466000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; CLOSED
+INFO	[2020.05.15D10:14:44.191518000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:16:27.392370000]:PID=22044:src/tick.q: USER: `; CONNECTION: 8i; OPEN
+INFO	[2020.05.15D10:16:27.392449000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.15D10:16:46.753334000]:PID=22044:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; CLOSED
+INFO	[2020.05.15D10:16:46.753386000]:PID=22044:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 50112552960 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.18D09:14:39.587851000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.18D09:14:39.587893000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.18D09:14:39.588007000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.18D09:14:39.588033000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.18D09:15:05.689638000]:PID=13039:src/tick.q: USER: `c; CONNECTION: 9i; OPEN
+INFO	[2020.05.18D09:15:05.689687000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.18D09:15:10.362798000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.18D09:15:10.362849000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.18D09:16:46.384843000]:PID=13039:src/tick.q: USER: `; CONNECTION: 9i; OPEN
+INFO	[2020.05.18D09:16:46.384886000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.18D09:17:05.828756000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.18D09:17:05.828802000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D09:12:58.430828000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D09:12:58.430871000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D09:13:04.018598000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D09:13:04.018647000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D09:13:05.263161000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D09:13:05.263204000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D09:13:45.838090000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.19D09:13:45.838137000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D09:21:01.376085000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D09:21:01.376138000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D09:21:35.463742000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.19D09:21:35.463789000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D12:29:48.182389000]:PID=13039:src/tick.q: USER: `c; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D12:29:48.182438000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:10:00.324061000]:PID=13039:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; CLOSED
+INFO	[2020.05.19D13:10:00.324120000]:PID=13039:src/tick.q: 
+ key: used has value: 418208 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:13:29.427573000]:PID=25803:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.19D13:13:29.427614000]:PID=25803:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:13:29.427729000]:PID=25803:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D13:13:29.427761000]:PID=25803:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:13:31.986143000]:PID=25803:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D13:13:31.986190000]:PID=25803:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:13:32.235524000]:PID=25803:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; CLOSED
+INFO	[2020.05.19D13:13:32.235579000]:PID=25803:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:13:34.315112000]:PID=25803:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D13:13:34.315155000]:PID=25803:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:13:35.642328000]:PID=25803:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D13:13:35.642367000]:PID=25803:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:14:12.020052000]:PID=25803:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.19D13:14:12.020094000]:PID=25803:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:18:41.953330000]:PID=26865:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.19D13:18:41.953373000]:PID=26865:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:18:41.953507000]:PID=26865:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D13:18:41.953555000]:PID=26865:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:18:43.654585000]:PID=26865:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D13:18:43.654625000]:PID=26865:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:18:45.901849000]:PID=26865:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D13:18:45.901898000]:PID=26865:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:18:47.147266000]:PID=26865:src/tick.q: USER: `mcelvogc; CONNECTION: 12i; OPEN
+INFO	[2020.05.19D13:18:47.147310000]:PID=26865:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:19:38.627948000]:PID=26865:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.19D13:19:38.627990000]:PID=26865:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:20:40.123652000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.19D13:20:40.123694000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:20:40.123809000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.19D13:20:40.123835000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:20:42.334745000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D13:20:42.334800000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:20:42.581808000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.19D13:20:42.581849000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:20:44.496615000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D13:20:44.496666000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:20:45.822807000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D13:20:45.822847000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:25:58.006611000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D13:25:58.006670000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:26:26.667165000]:PID=27362:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; CLOSED
+INFO	[2020.05.19D13:26:26.667217000]:PID=27362:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:28:55.671448000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.19D13:28:55.671488000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:28:55.671604000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.19D13:28:55.671630000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:28:58.048732000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D13:28:58.048773000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:28:58.295827000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; CLOSED
+INFO	[2020.05.19D13:28:58.295868000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:29:00.292086000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D13:29:00.292128000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:29:01.539920000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D13:29:01.539963000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:30:12.072498000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D13:30:12.072606000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:31:52.069074000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; CLOSED
+INFO	[2020.05.19D13:31:52.069122000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:35:21.071214000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D13:35:21.071267000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:37:40.832007000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; CLOSED
+INFO	[2020.05.19D13:37:40.832055000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D13:39:01.951137000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D13:39:01.951187000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D14:55:35.159241000]:PID=29063:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; CLOSED
+INFO	[2020.05.19D14:55:35.159286000]:PID=29063:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D14:58:05.194873000]:PID=18964:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.19D14:58:05.194912000]:PID=18964:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D14:58:05.195028000]:PID=18964:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.19D14:58:05.195055000]:PID=18964:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D14:58:09.966864000]:PID=18964:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D14:58:09.966910000]:PID=18964:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D14:58:11.211341000]:PID=18964:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D14:58:11.211378000]:PID=18964:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D14:59:59.060658000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.19D14:59:59.060699000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D14:59:59.060812000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.19D14:59:59.060838000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D15:00:01.807145000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.19D15:00:01.807185000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D15:00:04.144789000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.19D15:00:04.144817000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D15:00:05.310567000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.19D15:00:05.310611000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D16:20:24.416258000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 12i; OPEN
+INFO	[2020.05.19D16:20:24.416300000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D16:20:24.744006000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 12i; CLOSED
+INFO	[2020.05.19D16:20:24.744048000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D16:21:56.424782000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 12i; OPEN
+INFO	[2020.05.19D16:21:56.424844000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.19D16:21:56.754022000]:PID=19385:src/tick.q: USER: `mcelvogc; CONNECTION: 12i; CLOSED
+INFO	[2020.05.19D16:21:56.754080000]:PID=19385:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:13:11.195987000]:PID=30229:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.20D09:13:11.196027000]:PID=30229:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:13:11.196136000]:PID=30229:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.20D09:13:11.196162000]:PID=30229:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:13:12.488902000]:PID=30229:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.20D09:13:12.488951000]:PID=30229:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:13:14.490454000]:PID=30229:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.20D09:13:14.490497000]:PID=30229:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:13:15.489395000]:PID=30229:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.20D09:13:15.489439000]:PID=30229:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:14:44.771402000]:PID=30565:src/tick.q: USER: `mcelvogc; CONNECTION: 0i; CLOSED
+INFO	[2020.05.20D09:14:44.771444000]:PID=30565:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:14:44.771592000]:PID=30565:src/tick.q: USER: `mcelvogc; CONNECTION: 8i; OPEN
+INFO	[2020.05.20D09:14:44.771619000]:PID=30565:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:14:47.385880000]:PID=30565:src/tick.q: USER: `mcelvogc; CONNECTION: 9i; OPEN
+INFO	[2020.05.20D09:14:47.385922000]:PID=30565:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:14:49.634238000]:PID=30565:src/tick.q: USER: `mcelvogc; CONNECTION: 10i; OPEN
+INFO	[2020.05.20D09:14:49.634281000]:PID=30565:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+
+INFO	[2020.05.20D09:14:50.882348000]:PID=30565:src/tick.q: USER: `mcelvogc; CONNECTION: 11i; OPEN
+INFO	[2020.05.20D09:14:50.882386000]:PID=30565:src/tick.q: 
+ key: used has value: 418432 
+ key: heap has value: 67108864 
+ key: peak has value: 67108864 
+ key: wmax has value: 0 
+ key: mmap has value: 0 
+ key: mphy has value: 100846825472 
+ key: syms has value: 765 
+ key: symw has value: 39296
+

@@ -1,0 +1,12 @@
+'2022.08.19T14:49:43.607 quote
+  [2]  /home/ubuntu/KQKDB/src/rdb.q:27: .u.rep .(hopen `$"::6800")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                ^
+'2022.08.19T14:52:35.429 quote
+  [2]  /home/ubuntu/KQKDB/src/rdb.q:27: .u.rep .(hopen `$"::6800")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                ^
+nohup: ignoring input
+'2022.08.19T15:04:51.759 quote
+  [2]  /home/ubuntu/KQKDB/src/rdb.q:27: .u.rep .(hopen `$"::6800")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                ^
+'2022.08.19T17:21:36.931 6805. OS reports: Address already in use
+'2022.08.19T18:05:19.489 6805. OS reports: Address already in use

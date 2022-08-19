@@ -1,0 +1,23 @@
+'2019.10.22T08:18:04.167 type
+  [2]  /home/mcelvogc/adv_kdb/src/r1.q:26: .u.rep .(hopen `$"::5510")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                  ^
+'2019.10.22T08:27:04.657 type
+  [2]  /home/mcelvogc/adv_kdb/src/r1.q:26: .u.rep .(hopen `$"::5510")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                  ^
+'2019.10.22T12:00:50.068 type
+  [2]  /home/mcelvogc/adv_kdb/src/r1.q:26: .u.rep .(hopen `$"::5510")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                  ^
+'2020.05.16T00:00:04.293 /home/mcelvogc/adv_kdb/hdb/sym. OS reports: No such file or directory
+'2020.05.19T05:13:00.099 5511. OS reports: Address already in use
+'2020.05.19T09:13:32.153 type
+  [2]  /home/mcelvogc/adv_kdb/src/r1.q:26: .u.rep .(hopen `$"::5510")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                  ^
+'2020.05.19T09:20:42.499 type
+  [2]  /home/mcelvogc/adv_kdb/src/r1.q:26: .u.rep .(hopen `$"::5510")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                  ^
+'2020.05.19T09:28:58.213 type
+  [2]  /home/mcelvogc/adv_kdb/src/r1.q:26: .u.rep .(hopen `$"::5510")"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                  ^
+'2020.05.19T10:58:07.718 }
+  [0]  /home/mcelvogc/adv_kdb/src/r1.q:4: upd:{[t;x] if[ t in tables[];t insert x};
+                                                                                 ^
