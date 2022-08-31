@@ -100,9 +100,11 @@ echo -e "Do you want to kill all processes? [y - yes| n - no] \n"
 read -n1 -p " " doit
 
 case $doit in
-    Y|y) STOP_ALL| echo -e "\n\n Killing all processes \n"
+    Y|y) STOP_ALL 
+	 echo -e "\n\n Killing all processes \n"
     ;;
-    *) echo -e "\n Not stopping all processes \n"
+    *) 
+	 echo -e "\n Not stopping all processes \n"
     ;;
   * )
   esac
