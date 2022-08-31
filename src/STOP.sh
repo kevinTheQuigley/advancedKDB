@@ -1,4 +1,17 @@
 #!/bin/bash
+dirName=${PWD##*/}
+
+#Check location of directory
+
+if [ $dirName == "advancedKDB" ]; then
+  cd ./src
+  echo "Changing to source directory..."
+elif
+  [$dirname == "src"]; then
+  echo "Executing in source directory"
+else
+  echo "Directory not correctly set, please move to either the src advancedKDB directory"
+fi
 
 
 KDIR=$(pwd)/..
@@ -18,33 +31,33 @@ include ${SRC}/"/env.sh"
 
 
 function stopTP() {
-	kill `cat ${DATADIR}/logs/pids/tp.pid`
-        rm ${DATADIR}/logs/pids/tp.pid
+	kill `cat ${KDIR}/logs/pids/tp.pid`
+        rm ${KDIR}/logs/pids/tp.pid
 	echo -e "Stopping the TP \n"
 }
 
 
 function stopFH() {
-	kill `cat ${DATADIR}/logs/pids/feed.pid`
-        rm ${DATADIR}/logs/pids/feed.pid
+	kill `cat ${KDIR}/logs/pids/feed.pid`
+        rm ${KDIR}/logs/pids/feed.pid
 	echo -e "Stopping the Feedhandler \n"
 }
 
 function stopRDB() {
-	kill `cat ${DATADIR}/logs/pids/rdb1.pid`
-        rm ${DATADIR}/logs/pids/rdb1.pid
+	kill `cat ${KDIR}/logs/pids/rdb1.pid`
+        rm ${KDIR}/logs/pids/rdb1.pid
 	echo -e "Stopping the rdb\n"
 }
 
 function stopRDB2() {
-	kill `cat ${DATADIR}/logs/pids/rdb2.pid`
-        rm ${DATADIR}/logs/pids/rdb2.pid
+	kill `cat ${KDIR}/logs/pids/rdb2.pid`
+        rm ${KDIR}/logs/pids/rdb2.pid
 	echo -e "Stopping the rdb2\n"
 }
 
 function stopCEP() {
-	kill `cat ${DATADIR}/logs/pids/cep.pid`
-        rm ${DATADIR}/logs/pids/cep.pid
+	kill `cat ${KDIR}/logs/pids/cep.pid`
+        rm ${KDIR}/logs/pids/cep.pid
 	echo -e "Stopping the cep\n"
 }
 
@@ -86,13 +99,10 @@ function STOP_ALL(){
 echo -e "Do you want to kill all processes? [y - yes| n - no] \n" 
 read -n1 -p " " doit
 
-
 case $doit in
-    Y|y)
-    STOP_ALL| echo -e "Killing all processes"
+    Y|y) STOP_ALL| echo -e "\n\n Killing all processes \n"
     ;;
-    *)
-	    echo -e "\n Not stopping all processes \n"
+    *) echo -e "\n Not stopping all processes \n"
     ;;
   * )
   esac
