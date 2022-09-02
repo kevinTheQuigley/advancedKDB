@@ -1,11 +1,14 @@
 if[not "w"=first string .z.o;system "sleep 1"];
 
+
 upd:{[t;x] if[t in tables[]; t insert x]};
+
 
 / get the ticker plant and history ports, defaults are 5010,5012
 .u.x:.z.x,(count .z.x)_(":6800";":6805");
 
 / end of day: save, clear, hdb reload
+
 
 .u.end:{
         t:tables`.;
@@ -14,12 +17,14 @@ upd:{[t;x] if[t in tables[]; t insert x]};
         @[;`sym;`g#] each t
     };
 
+
 .u.rep:{
         (.[;();:;].) x;
         if[null first y;:()];
         -11!y;
         system "cd ",1_-10_string first reverse y
    }; 
+
 
 .u.rep .(hopen `$"::6800")"((.u.sub[`Aggregation;`]);`.u `i`L)";
 

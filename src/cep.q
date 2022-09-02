@@ -6,7 +6,7 @@ upd:insert;
 
 .z.ts:{  
   
-	Aggretation: 0!((select min_price:min price,max_price:max price,vol:sum size by sym from trade) lj
+	Aggretation: 0!((select min_price:min price,max_price:max price,vol:sum size by sym from Trade) lj
   (select max_bid: max bid, min_ask: min ask by sym from Quote));
 
   tph(".u.upd";`Aggregation;value flip Aggregation); 
