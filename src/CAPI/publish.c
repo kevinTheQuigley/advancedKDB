@@ -63,7 +63,7 @@ int main(int argc, char **argv) {
    printf( " %s\n", token );
 
    token = strtok(NULL, ",");
-   result= k(handle, ".u.upd", ks((S) "quote"), row, (K) 0);
+   result= k(handle, ".u.upd", ks((S) "Quote"), row, (K) 0);
    
    if(!result) {
      kclose(handle);
