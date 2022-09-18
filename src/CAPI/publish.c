@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
  }
 
  S hostname= "localhost";
- S usernamePassword= "";
+ S usernamePassword= "ubuntu:Ppaulval53";
 
  K result, singleRow;
  int* i=0;

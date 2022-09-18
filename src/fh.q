@@ -1,26 +1,37 @@
 
-h      : neg hopen `::6800 /connect to tickerplant
-syms   : `MSFT.O`IBM.N`GS.N`BA.N`VOD.L /stocks
-prices : syms!45.15 191.10 178.50 128.04 341.30 /starting prices
-n      : 2 /number of rows per update
-flag   : 1 /generate 10% of updates for Trade and 90% for Quote
+//opening connection to TP
+tp     : neg hopen `::6800 /connect to tickerplant
 
-getmovement:{[s] rand[0.0001]*prices[s]} /get a random price movement
+//Setting the syms
+syms   : `FH.l`FEED.L`FDHNDLR.Y`GM.E`TES.A /stocks
+
+//Setting the starting prices of all syms (Extremelely accurately)
+prices : syms!100.01 101.02 1.50 100280.04 420.69 
+
+//Setting the number of rows
+numRow : 2
+
+// Sets the ratio of trades to Quotes to 4:1
+ratio   : 2
+
+/initiate a change in price from it's previous value
+
+priceChamge:{[s] rand[0.1]*prices[s]} 
 
 /generate Trade price
-getprice:{[s] prices[s]+:rand[1 -1]*getmovement[s]; prices[s]}
-getbid:{[s] prices[s]-getmovement[s]} /generate bid price
-getask:{[s] prices[s]+getmovement[s]} /generate ask price
+setNewPrice:{[s] prices[s]+:rand[1 -1]*priceChamge[s]; prices[s]}
+setBidPrice:{[s] prices[s]-priceChamge[s]} /generate bid price
+setAskPrice:{[s] prices[s]+priceChamge[s]} /generate ask price
 
 /timer function
 .z.ts:{
-   s:n?syms;
-   $[0<flag mod 10;
-	   h(".u.upd";`Quote;(n#.z.N;s;getbid'[s];getask'[s];n?1000;n?1000));
-	   h(".u.upd";`Trade;(n#.z.N;s;getprice'[s];n?1000))
-    ];
-   flag+:1;
-  };
+	s:numRow?syms;
+	$[0<ratio mod 10;
+	   tp(".u.upd";`Quote;(numRow#.z.N;s;setBidPrice'[s];setAskPrice'[s];numRow?1000;numRow?1000));
+	   tp(".u.upd";`Trade;(numRow#.z.N;s;setNewPrice'[s];numRow?1000))
+	];
+        ratio+:1;
+      };
 
-/trigger timer every 100ms
+/trigger should be active every 2 seconds
 \t 2000

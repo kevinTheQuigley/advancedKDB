@@ -137,7 +137,11 @@ if[not system"t";
 //setting smallest cron timer interval
 //.cron.cfg.timerInterval:59;
 
+echoFunc:{[]show"CronJob Added"}
 
+//.cron.add[	`.u.tp_tick	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
+.cron.add[	`.u.tp_tick	;(::);`repeat;.z.p;0Np;`timespan$`second$1];
+.cron.add[	`echoFunc	;(::);`repeat;.z.p;0Np;`timespan$`second$1];
 
-.cron.add[	`.u.tp_tick	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
-.cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
+//.cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
+.cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`second$1];
