@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 
 import datetime
 import numpy
@@ -29,7 +29,7 @@ if __name__ == '__main__':
         for row in exportCSV('./Quote.csv'):
             print(row[0])
   
-            tick = [numpy.string_(row[0]).decode("UTF-8"),
+            tick = [numpy.string_(row[0]),
                     numpy.float_(row[1]),
                     numpy.float_(row[2]),
                     numpy.int_(row[3]),
