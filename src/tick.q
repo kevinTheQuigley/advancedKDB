@@ -84,10 +84,10 @@ set_tick:1;
 
 //if[set_tick;
 tp_tick:{
-   pub'[t;value each t];
+   .u.pub'[t;value each t];
    @[`.;t;@[;`sym;`g#]0#];
    i::j;
-   ts .z.D;
+   .u.ts .z.D;
    };
 upd:{[t;x]
   if[not -16=type first first x;
@@ -111,7 +111,7 @@ if[not system"t";
     system"t 1000";
     .z.ts:{ts .z.D};
     upd:{[t;x]
-         ts"d"$a:.z.P;
+         .u.ts"d"$a:.z.P;
          if[not -16=type first first x;
             a:"n"$a;
             x:$[0>type first x;
@@ -119,7 +119,7 @@ if[not system"t";
                 (enlist(count first x)#a),x]
             ];
          f:key flip value t;
-         pub[t;$[0>type first x;
+	 .u.pub[t;$[0>type first x;
              enlist f!x;
              flip f!x]
             ];
@@ -129,9 +129,26 @@ if[not system"t";
          }
     ];
 
+
+pub:{[t;x]{[t;x;w]if[count x:.u.sel[x]w 1;(neg first w)(`upd;t;x)]}[t;x]each .u.w .u.t}
+
+init:{w::t!(count t::tables`.)#()}
+
+del:{w[x]_:w[x;;0]?y};.z.pc:{del[;x]each t};
+
+sel:{$[`~y;x;select from x where sym in y]}
+
+pub:{[t;x]{[t;x;w]if[count x:sel[x]w 1;(neg first w)(`upd;t;x)]}[t;x]each w t}
+
+add:{$[(count w x)>i:w[x;;0]?.z.w;.[`.u.w;(x;i;1);union;y];w[x],:enlist(.z.w;y)];(x;$[99=type v:value x;sel[v]y;@[0#v;`sym;`g#]])}
+
+sub:{if[x~`;:sub[;y]each t];if[not x in t;'x];del[x].z.w;add[x;y]}
+
+end:{(neg union/[w[;;0]])@\:(`.u.end;x)}
+
+
 \d .
-
-
+upd:.u.upd
 .u.tick[symFile;rawDir];
 
 //setting smallest cron timer interval
