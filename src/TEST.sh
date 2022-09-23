@@ -38,17 +38,18 @@ function RUN_ALL(){
 function IS_ACTIVE(){
 
     file=$1
+    echo -e "\n"
     echo $1
     if [ -f "$file" ]
-	echo "This is a file"
+	echo -e "\n The PID for this process exists \n"
         then
         PID=`cat ${file}`
                 if ps -e -p "$PID" > /dev/null
                 then
                 echo "${1} IS ACTIVE"
-                 ps -Fw -e -p  ${PID} | grep q
+                ps -Fw -e -p  ${PID}| grep ${PID##*/} 
         else
-                echo "${1} IS NOT ACTIVE"
+                echo -e "${1} IS NOT ACTIVE\n"
                 fi
     fi
 }
