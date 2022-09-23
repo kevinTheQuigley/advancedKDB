@@ -6,7 +6,7 @@ import sys
 import time
 import subprocess
 
-rc = subprocess.call("sleep.sh")
+#rc = subprocess.call("sleep.sh")
 
 from qpython import qconnection
 from qpython.qcollection import qlist
