@@ -1,12 +1,18 @@
 
+cdir:-4_first (system "pwd")
+system "l ",cdir,"/src/sym.q";
 
-tph: hopen`$"::",getenv`PORT_TP;
+tph: hopen`$"::",.z.x[0];
+
+tph(`.u.sub;`;`)
 
 upd:insert; 
 
 .z.ts:{  
+	//Trade:neg tph"Trade"
+	//Quote:neg tph"Quote"
   
-	AggretationData: 0!((select min_price:min price,max_price:max price,vol:sum size by sym from Trade) lj
+	AggregationData: 0!((select min_price:min price,max_price:max price,vol:sum size by sym from Trade) lj
   (select max_bid: max bid, min_ask: min ask by sym from Quote));
 
   tph(".u.upd";`Aggregation;value flip AggregationData); 

@@ -6,8 +6,7 @@ dirName=${PWD##*/}
 if [ $dirName == "advancedKDB" ]; then
   cd ./src
   echo "Changing to source directory..."
-elif
-  [$dirname == "src"]; then
+elif [ $dirname == "src" ]; then
   echo "Executing in source directory"
 else
   echo "Directory not correctly set, please move to either the src advancedKDB directory"
@@ -54,25 +53,25 @@ function startTP() {
 
 
 function startFH() {
-	nohup q ./fh.q -p ${PORT_FH} >> ${DATADIR}/logs/data/feed.log 2>&1 &
+	nohup q ./fh.q -p ${PORT_FH} ${PORT_TP} >> ${DATADIR}/logs/data/feed.log 2>&1 &
         echo $! > ${DATADIR}/logs/pids/feed.pid
 	echo -e "Starting the FH \n"
  }
 
 function startRDB() {
-        nohup q ./rdb.q :${PORT_TP} -p ${PORT_RDB1} >> ${DATADIR}/logs/data/rdb1.log 2>&1 &
+        nohup q ./rdb.q :${PORT_TP} -p ${PORT_RDB1} ${PORT_TP} :${PORT_RDB2} >> ${DATADIR}/logs/data/rdb1.log 2>&1 &
         echo $! > ${DATADIR}/logs/pids/rdb1.pid
 	echo -e "Starting the RDB \n"
  }
 
 function startRDB2() {
-	nohup q ./rdb2.q :${PORT_TP} -p ${PORT_RDB2} >> ${DATADIR}/logs/data/rdb2.log 2>&1 &
+	nohup q ./rdb2.q :${PORT_TP} -p ${PORT_RDB2} ${PORT_TP} :${PORT_RDB} >> ${DATADIR}/logs/data/rdb2.log 2>&1 &
         echo $! > ${DATADIR}/logs/pids/rdb2.pid
 	echo -e "Starting the RDB2 \n"
  }
 
 function startCEP() {
-        nohup q ./cep.q -p ${PORT_CEP} >> ${DATADIR}/logs/data/cep.log 2>&1 &
+        nohup q ./cep.q -p ${PORT_CEP} ${PORT_TP} >> ${DATADIR}/logs/data/cep.log 2>&1 &
         echo $! > ${DATADIR}/logs/pids/cep.pid
 	echo -e "Starting the CEP \n"
  }
@@ -115,11 +114,16 @@ function startCEP() {
 #  * ) 
 #  esac 
 
-read -n1 -p "Do you want to start all processes? [y,n]" doit 
-echo -e "/n"
+echo -e "\n Do you want to start all processes, or one specific process?"
+echo -e "\n y - Yes, Start all processes"
+echo -e "\n n - No, Start no processes"
+echo -e "\n o - One, Start one specific process\n"
+read -n1 -p " " doit
+echo -e "\n"
 case $doit in  
-  y|Y) echo -e "yes \n" |RUN_ALL;; 
-  n|N) echo no ;; 
+  y|Y) echo -e "Yes \n\n" |RUN_ALL;; 
+  n|N) echo -e "No \n\n" ;; 
+  o|O) echo -e "Selecting a specific process\n\n";;
   *) echo dont know ;; 
 esac
 

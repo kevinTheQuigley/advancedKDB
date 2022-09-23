@@ -6,9 +6,9 @@ upd:{[t;x] if[t in tables[];t insert x]};
 
 
 //Need the location of the tickerplant and the other rdb port
-/ get the ticker plant and history ports, defaults are 5010,5012
+/ get the ticker plant and history ports, defaults 
 
-.u.x:.z.x,(count .z.x)_(":6800";":6806");
+.u.x:.z.x ,(count .z.x)_(.z.x[0];.z.x[2]);
 
 / end of day: save, clear, hdb reload
 
@@ -30,5 +30,5 @@ upd:{[t;x] if[t in tables[];t insert x]};
 
 
 / connect to ticker plant for (schema;(logcount;log))
-.u.rep .(hopen `$"::6800")"((.u.sub[`Trade;`];.u.sub[`Quote;`]);`.u `i`L)";
+.u.rep .(hopen `$("::", .u.x[1])"((.u.sub[`Trade;`];.u.sub[`Quote;`]);`.u `i`L)";
 

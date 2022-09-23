@@ -20,7 +20,7 @@ symFile: "sym";
 logDir : cdir,"/logs";
 rawDir : logDir,"/raw";
 
-if[not system"p";system"p 6800"]
+//if[not system"p";system"p 6800"]
 
 \d .u
 

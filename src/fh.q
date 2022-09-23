@@ -1,6 +1,7 @@
 
 //opening connection to TP
-tp     : neg hopen `::6800 /connect to tickerplant
+
+tp     : neg hopen `$("::",.z.x[0]) /connect to tickerplant
 
 //Setting the syms
 syms   : `FH.l`FEED.L`FDHNDLR.Y`GM.E`TES.A /stocks
@@ -34,4 +35,6 @@ setAskPrice:{[s] prices[s]+priceChamge[s]} /generate ask price
       };
 
 /trigger should be active every 2 seconds
+//\t 2000
+/Can temporarily be set to 0
 \t 2000

@@ -96,20 +96,24 @@ function STOP_ALL(){
         stopCEP
 }
 
-echo -e "Do you want to kill all processes? [y - yes| n - no] \n" 
+echo -e "\n Do you want to stop all processes, or one specific process?"
+echo -e "\n y - Yes, stop all processes"
+echo -e "\n n - No, stop no processes"
+echo -e "\n o - One, stop one specific process\n"
+
 read -n1 -p " " doit
+echo -e "\n"
 
 case $doit in
-    Y|y) STOP_ALL 
-	 echo -e "\n\n Killing all processes \n"
-    ;;
-    *) 
-	 echo -e "\n Not stopping all processes \n"
-    ;;
+    Y|y) echo -e "\n\n Killing all processes \n" | STOP_ALL ;;
+    O|o) echo -e "\n\n Selecting one specific process \n" ;;
+    N|n) echo -e "\n\n Stopping no processes \n" ;;
+
+    *) echo -e "\n Unkown input, please select one of the three options above \n" ;;
   * )
   esac
 
-if [ $doit == "n" ]
+if [ $doit == "o" ]
 then
         echo -e "Please enter a two letter word if you would like to stop a specific process\n ie for tp -tp \n for filehandler- fh\n for rdb1- r1 \n for rdb2- r2\n for cep-ce "
         read -n2 -ep " " s1

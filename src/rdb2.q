@@ -4,8 +4,7 @@ if[not "w"=first string .z.o;system "sleep 1"];
 upd:{[t;x] if[t in tables[]; t insert x]};
 
 
-/ get the ticker plant and history ports, defaults are 5010,5012
-.u.x:.z.x,(count .z.x)_(":6800";":6805");
+.u.x:.z.x,(count .z.x)_(.z.x[0];.z.x[2]);
 
 / end of day: save, clear, hdb reload
 
@@ -26,5 +25,5 @@ upd:{[t;x] if[t in tables[]; t insert x]};
    }; 
 
 
-.u.rep .(hopen `$"::6800")"((.u.sub[`Aggregation;`]);`.u `i`L)";
+.u.rep .(hopen `$("::",.z.x[1]))"((.u.sub[`Aggregation;`]);`.u `i`L)";
 
