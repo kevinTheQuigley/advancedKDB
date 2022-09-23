@@ -47,7 +47,7 @@ function IS_ACTIVE(){
                 if ps -e -p "$PID" > /dev/null
                 then
                 echo "${1} IS ACTIVE"
-                #ps -Fw -e -p  ${PID} | grep "./*.q"
+                ps -Fw -e -p  ${PID}| grep ${PID##*/} 
         else
                 echo -e "${1} IS NOT ACTIVE\n"
                 fi
