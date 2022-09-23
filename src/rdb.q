@@ -1,12 +1,7 @@
- 
-if[not "w"=first string .z.o;system "sleep 1"];
-
+ if[not "w"=first string .z.o;system "sleep 1"];
 
 upd:{[t;x] if[t in tables[];t insert x]};
 
-
-//Need the location of the tickerplant and the other rdb port
-/ get the ticker plant and history ports, defaults 
 
 .u.x:.z.x ,(count .z.x)_(.z.x[0];.z.x[2]);
 
@@ -30,5 +25,5 @@ upd:{[t;x] if[t in tables[];t insert x]};
 
 
 / connect to ticker plant for (schema;(logcount;log))
-.u.rep .(hopen `$("::", .u.x[1])"((.u.sub[`Trade;`];.u.sub[`Quote;`]);`.u `i`L)";
+.u.rep .(hopen `$("::", .z.x[1]))"((.u.sub[`Trade;`];.u.sub[`Quote;`]);`.u `i`L)";
 

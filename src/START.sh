@@ -65,7 +65,7 @@ function startRDB() {
  }
 
 function startRDB2() {
-	nohup q ./rdb2.q :${PORT_TP} -p ${PORT_RDB2} ${PORT_TP} :${PORT_RDB} >> ${DATADIR}/logs/data/rdb2.log 2>&1 &
+	nohup q ./rdb2.q :${PORT_TP} -p ${PORT_RDB2} ${PORT_TP} :${PORT_RDB1} >> ${DATADIR}/logs/data/rdb2.log 2>&1 &
         echo $! > ${DATADIR}/logs/pids/rdb2.pid
 	echo -e "Starting the RDB2 \n"
  }
