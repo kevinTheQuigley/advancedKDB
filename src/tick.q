@@ -15,6 +15,7 @@ system "l ",cdir,"/kdb-common/src/cron.q";
 system "l ",cdir,"/kdb-common/src/cargs.q";
 system "l ",cdir,"/kdb-common/src/log.q";
 system "l ",cdir,"/kdb-common/src/time.util.q";
+system "l ",cdir,"/kdb-common/src/if.q";
 
 symFile: "sym";
 logDir : cdir,"/logs";
@@ -162,3 +163,6 @@ echoFunc:{[]show"CronJob Added"}
 
 //.cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
 .cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`second$1];
+
+.z.ts:{.u.tp_tick[]}
+.z.ts{.u.logger[]}
