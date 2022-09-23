@@ -25,5 +25,6 @@ upd:{[t;x] if[t in tables[];t insert x]};
 
 
 / connect to ticker plant for (schema;(logcount;log))
-.u.rep .(hopen `$("::", .z.x[1]))"((.u.sub[`Trade;`];.u.sub[`Quote;`]);`.u `i`L)";
+
+.u.rep .(hopen `$("::", .u.x[1]))"((.u.sub[`Trade;`];.u.sub[`Quote;`]);`.u `i`L)";
 
