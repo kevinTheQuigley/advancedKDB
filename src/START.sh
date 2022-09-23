@@ -77,42 +77,6 @@ function startCEP() {
  }
 
 
-#function main(){
-#    case $1 in
-#        tp)
-#        nohup q ./tick.q ${SCHEMA} ${DATADIR}/raw -p ${PORT_TP} -t ${TPTIMER} >> ${DATADIR}/logs/data/tp.log 2>&1 &
-#      	echo $! > ${DATADIR}/logs/pids/tp.pid
-#        ;;
-#        fh)
-#        nohup $Q ./fh.q -p ${PORT_FH} >> ${DATADIR}/logs/data/feed.log 2>&1 &
-#            echo $! > ${DATADIR}/logs/pids/feed.pid
-#        ;;
-#        rdb1)
-#        nohup $Q ./r1.q :${PORT_TP} -p ${PORT_RDB1} >> ${DATADIR}/logs/data/rdb1.log 2>&1 &
-#            echo $! > ${DATADIR}/logs/pids/rdb1.pid
-#        ;;
-#        rdb2)
-#        nohup $Q ./r2.q :${PORT_TP} -p ${PORT_RDB2} >> ${DATADIR}/logs/data/rdb2.log 2>&1 &
-#            echo $! > ${DATADIR}/logs/pids/rdb2.pid
-#        ;;
-#        cep)
-#        nohup $Q ./cep.q -p ${PORT_CEP} >> ${DATADIR}/logs/data/cep.log 2>&1 &
-#            echo $! > ${DATADIR}/logs/pids/cep.pid
-#        ;;
-#      *)
-#    esac
-#}
-
-
-#if $1==1:
-#    ALL)
-#    RUN_ALL
-#    ;;
-#    ONE) 
-#    main ${2}   
-#    ;;
-#  * ) 
-#  esac 
 
 echo -e "\n Do you want to start all processes, or one specific process?"
 echo -e "\n y - Yes, Start all processes"
