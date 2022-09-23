@@ -3,7 +3,7 @@ cdir:-4_first (system "pwd")
 
 
 h1:hopen`::6800;
-(neg h1)("u.upd";`Quote;value flip("SFFII";enlist ",")0:hsym`$cdir,"/api/csv_files/quote_test_api.csv");
+(neg h1)("upd";`Quote;value flip("SFFII";enlist ",")0:hsym`$cdir,"/src/Quote.csv");
 
 exit 0; 
 
