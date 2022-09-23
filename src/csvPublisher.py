@@ -4,6 +4,9 @@ import datetime
 import numpy
 import sys
 import time
+import subprocess
+
+rc = subprocess.call("sleep.sh")
 
 from qpython import qconnection
 from qpython.qcollection import qlist
@@ -19,8 +22,23 @@ def exportCSV(filename):
         data = genfromtxt(filename, delimiter=',', dtype=None,skip_header=1,encoding=None)
         return data
 
+global sLine
+def check():
+    with open('env.sh') as f:
+        datafile = f.readlines()
+    for line in datafile:
+        if "PORT_TP" in line:
+            global portLine
+            # found = True # Not necessary
+            portLine=line
+check()
+sLine=portLine.split("=", 10)
+tpPort=sLine[-1]
+tpPort = int(tpPort)
+
+
 if __name__ == '__main__':
-    with qconnection.QConnection(host='localhost', port=6800) as q:
+    with qconnection.QConnection(host='localhost', port=tpPort) as q:
         print(q)
         print('IPC version: %s. Is connected: %s' % (q.protocol_version, q.is_connected()))
         data = q.sendSync('{`long$ til x}', 10)
