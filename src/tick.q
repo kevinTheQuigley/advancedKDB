@@ -4,7 +4,7 @@ cdir:-4_first (system "pwd")
 //Some very very extremely strange non-replay-ability going on. Resolved by resetting the value of cdir
 system "l ",cdir,"/src/sym.q";
 system "l ",cdir,"/kdb-tick-master/tick/u.q"; 
-system "l ",cdir,"/log4q-master/log4q.q";
+system "l ",cdir,"/kdb-common/log4q.q";
 //Below may be tricky, watch .cron jobs
 system "l ",cdir,"/kdb-common/src/type.q";
 system "l ",cdir,"/kdb-common/src/time.q";
@@ -21,7 +21,9 @@ symFile: "sym";
 logDir : cdir,"/logs";
 rawDir : logDir,"/raw";
 
-//if[not system"p";system"p 6800"]
+.log4q.a[hopen `$(":",logDir, "/data/tp.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL ]
+
+if[not system"p";system"p 6800"]
 
 \d .u
 
@@ -74,7 +76,7 @@ ts:{
 logger:{
         
         {
- 		 .log4q.INFO("current subscribers for ",(string x),": ",("" sv {"%",(string x)} each 1+ til (count .u.w[x]));.u.w[x]);
+ 	 .log4q.INFO("current subscribers for ",(string x),": ",("" sv {"%",(string x)} each 1+ til (count .u.w[x]));.u.w[x]);
          .log4q.INFO("current messages processed by table ",(string x),": ",(string (tbl_counter[x])));
         }each tables[]
   
@@ -164,5 +166,5 @@ echoFunc:{[]show"CronJob Added"}
 //.cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
 .cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`second$1];
 
-.z.ts:{.u.tp_tick[]}
-.z.ts{.u.logger[]}
+.z.ts:{.u.tp_tick[];
+	.u.logger[]};
