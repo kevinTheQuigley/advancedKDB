@@ -1,6 +1,6 @@
 //cdir:-4_ first (system "pwd")
 //cdir:"/home/ubuntu/KQKDB";
-cdir:-4_first (system "pwd")
+cdir:-4_first (system "pwd");
 //Some very very extremely strange non-replay-ability going on. Resolved by resetting the value of cdir
 system "l ",cdir,"/src/sym.q";
 system "l ",cdir,"/kdb-tick-master/tick/u.q"; 

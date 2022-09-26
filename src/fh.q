@@ -1,4 +1,9 @@
 
+cdir:-4_first (system "pwd");
+logDir : cdir,"/logs";
+system "l ",cdir,"/kdb-common/log4q.q";
+.log4q.a[hopen `$(":",logDir, "/data/fh.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL ]
+
 //opening connection to TP
 
 tp     : neg hopen `$("::",.z.x[0]) /connect to tickerplant
