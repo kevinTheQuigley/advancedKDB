@@ -21,7 +21,7 @@ symFile: "sym";
 logDir : cdir,"/logs";
 rawDir : logDir,"/raw";
 
-.log4q.a[hopen `$(":",logDir, "/data/tp.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL ]
+.log4q.a[hopen `$(":",logDir, "/data/tp.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL`TEST ]
 
 if[not system"p";system"p 6800"]
 

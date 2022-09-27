@@ -2,7 +2,7 @@
 cdir:-4_first (system "pwd");
 logDir : cdir,"/logs";
 system "l ",cdir,"/kdb-common/log4q.q";
-.log4q.a[hopen `$(":",logDir, "/data/rdb1.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL ]
+.log4q.a[hopen `$(":",logDir, "/data/rdb1.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL`TEST ]
 
 if[not "w"=first string .z.o;system "sleep 1"];
 

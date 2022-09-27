@@ -1,7 +1,7 @@
 cdir:-4_first (system "pwd");
 logDir : cdir,"/logs";
 system "l ",cdir,"/kdb-common/log4q.q";
-.log4q.a[hopen `$(":",logDir, "/data/cep.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL ]
+.log4q.a[hopen `$(":",logDir, "/data/cep.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL`TEST ]
 
 
 system "l ",cdir,"/src/sym.q";

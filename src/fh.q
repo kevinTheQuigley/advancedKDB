@@ -2,14 +2,18 @@
 cdir:-4_first (system "pwd");
 logDir : cdir,"/logs";
 system "l ",cdir,"/kdb-common/log4q.q";
-.log4q.a[hopen `$(":",logDir, "/data/fh.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL ]
+.log4q.a[hopen `$(":",logDir, "/data/fh.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL`TEST ]
+
+
+.log.sendToStdOutErr:.log4q.INFO
+
 
 //opening connection to TP
 
 tp     : neg hopen `$("::",.z.x[0]) /connect to tickerplant
 
 //Setting the syms
-syms   : `FH.l`FEED.L`FDHNDLR.Y`GM.E`TES.A /stocks
+syms   : `FH.l`FEED.L`FDHNDLR.Y`GM.E`IBM.n /stocks
 
 //Setting the starting prices of all syms (Extremelely accurately)
 prices : syms!100.01 101.02 1.50 100280.04 420.69 

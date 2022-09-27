@@ -31,7 +31,7 @@ function RUN_ALL(){
         sleep 2
         IS_ACTIVE "${KDIR}/logs/pids/rdb2.pid"
         sleep 2
-	IS_ACTIVE "${KDIR}/logs/pids/tp.pid"
+	IS_ACTIVE "${KDIR}/logs/pids/cep.pid"
 }
 
 
@@ -39,18 +39,28 @@ function IS_ACTIVE(){
 
     file=$1
     echo -e "\n"
-    echo $1
+    #echo $1
     if [ -f "$file" ]
-	echo -e "\n The PID for this process exists \n"
         then
         PID=`cat ${file}`
+	#echo -e "\n The PID for this process exists and is $PID \n"
+	port=" "
                 if ps -e -p "$PID" > /dev/null
                 then
-                echo "${1} IS ACTIVE"
-                ps -Fw -e -p  ${PID}| grep ${PID##*/} 
+			port=`netstat -taunp  2>/dev/null | grep $PID -m 1 |awk -F ':' '{print $2}'|awk '{print $1}'`
+			fName=`echo ${file}|sed 's#.*/##'| sed 's/.pid//'`
+			if [[ "$port" != " " && "$port" != "" ]]
+			then 
+				echo $"The $fName process is active on port $port with pid $PID"
+			else
+				echo $"The pid is stored for $fName as $PID, but the process is unavailable and so port is blank"
+			fi
+                #echo "${1} IS ACTIVE"
+                #ps -Fw -e -p  ${PID}| grep ${PID##*/} 
         else
-                echo -e "${1} IS NOT ACTIVE\n"
+                echo -e "${1} The PID for this process is not stored. Please start via the bash script\n"
                 fi
+	port=" "
     fi
 }
 
