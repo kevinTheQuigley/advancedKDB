@@ -13,7 +13,10 @@ if[not "w"=first string .z.o;system "sleep 1"];
 //upd:{[t;x] if[t in tables[]; select max  x]};
 upd:{[x;y] if[(x = `Aggregation) &  (0 <  count y 0);
 		.kq.y:y;
-                data:{[input].kq.input:input; `.kq.Aggregation upsert enlist .kq.input} each y;
+		$[16h=type .kq.y[0];
+			data:{[input].kq.input:input; `.kq.Aggregation insert .kq.input}  .kq.y;
+			data:{[input].kq.input:input; `.kq.Aggregation upsert enlist .kq.input} each y
+			];
 		//show("data is ";data);
 		if[1< count .kq.input;
 			Agg :0! select time:max time, maxTradePrice:max maxTradePrice,minTradePrice:min minTradePrice,tradedVolume:sum tradedVolume,maxBid:max maxBid,minAsk:min minAsk by sym from Aggregation upsert .kq.Aggregation;
