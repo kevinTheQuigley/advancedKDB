@@ -1,6 +1,6 @@
 if[(symfile:.z.x 0)~();
   "The log file should be passed as  symXXX.XX.XX as arg";
-  exit 0;
+  //exit 0;
  ];
 
 cdir:-4_first (system "pwd")
@@ -22,7 +22,7 @@ newGeneratedSym:{[directory;fileName]
 
 upd:{[t;x]
   if[t in (`Trade`Quote);
-       {if[`IBM.N ~ (first 1_2#(x));
+	{if[`IBM.n ~ (first 1_2#(x));
            h enlist(`upd;y;x)]  }[;t]each flip x
       ]
    };
