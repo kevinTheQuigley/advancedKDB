@@ -10,7 +10,8 @@ elif
   [$dirname == "src"]; then
   echo "Executing in source directory"
 else
-  echo "Directory not correctly set, please move to either the src advancedKDB directory"
+  echo -e "\n"
+  #echo "Directory not correctly set, please move to either the src advancedKDB directory"
 fi
 
 

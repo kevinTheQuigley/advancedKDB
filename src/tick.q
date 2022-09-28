@@ -66,7 +66,7 @@ endOfDay:{
 ts:{
      if[d<x;
         if[d<x-1;
-           system"t 0";
+           system"t 0";;
            '"more than one day?"
           ];
         endOfDay[]
@@ -76,7 +76,7 @@ ts:{
 logger:{
         
         {
- 	 .log4q.INFO("current subscribers for ",(string x),": ",("" sv {"%",(string x)} each 1+ til (count .u.w[x]));.u.w[x]);
+ 	 //.log4q.INFO("current subscribers for ",(string x),": ",("" sv {"%",(string x)} each 1+ til (count .u.w[x]));.u.w[x]);
          .log4q.INFO("current messages processed by table ",(string x),": ",(string (tbl_counter[x])));
         }each tables[]
   
@@ -92,6 +92,7 @@ tp_tick:{
    i::j;
    .u.ts .z.D;
    };
+
 upd:{[t;x]
   if[not -16=type first first x;
      if[d<"d"$a:.z.P;
@@ -107,11 +108,12 @@ upd:{[t;x]
   if[l;
      l enlist (`upd;t;x);
      j+:1];
+  {.log4q.INFO("current messages processed by table ",(string x),": ",(string (tbl_counter[x])))} t
  }
 
 
 if[not system"t";
-    system"t 1000";
+    system"t 2000";
     .z.ts:{ts .z.D};
     upd:{[t;x]
          .u.ts"d"$a:.z.P;
@@ -149,10 +151,18 @@ sub:{if[x~`;:sub[;y]each t];if[not x in t;'x];del[x].z.w;add[x;y]}
 
 end:{(neg union/[w[;;0]])@\:(`.u.end;x)}
 
+checkPs:{if[.kq.WW< (count key .z.W);.kq.WW:.kq.WW+1;
+		{.log4q.INFO("current subscribers for ",(string x),": ",("" sv {"%",(string x)} each 1+ til (count .u.w[x]));.u.w[x]) } each tables[] ]}
+
 
 \d .
 upd:.u.upd
 .u.tick[symFile;rawDir];
+
+
+//.z.po:{.log4q.INFO("current subscribers for ",(string x),": ",("" sv {"%",(string x)} each 1+ til (count .u.w[x]));.u.w[x])}
+
+//.z.pc:{.log4q.INFO("current subscribers for ",(string x),": ",("" sv {"%",(string x)} each 1+ til (count .u.w[x]));.u.w[x])}
 
 //setting smallest cron timer interval
 //.cron.cfg.timerInterval:59;
@@ -166,5 +176,11 @@ echoFunc:{[]show"CronJob Added"}
 //.cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`minute$1];
 .cron.add[	`.u.logger	;(::);`repeat;.z.p;0Np;`timespan$`second$1];
 
+.kq.WW: 0;
+
+
+
 .z.ts:{.u.tp_tick[];
-	.u.logger[]};
+	.u.checkPs[];
+	//.u.logger[];
+	};

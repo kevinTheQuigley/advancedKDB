@@ -1,13 +1,32 @@
 cdir:-4_first (system "pwd");
 logDir : cdir,"/logs";
 system "l ",cdir,"/kdb-common/log4q.q";
-.log4q.a[hopen `$(":",logDir, "/data/rdb2.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL`TEST ]
+system "l ",cdir,"/src/sym.q";
+.kq.Aggregation:Aggregation;
+.log4q.a[hopen `$(":",logDir, "/data/rdb2.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL`TEST ];
+
 
 
 if[not "w"=first string .z.o;system "sleep 1"];
 
 
-upd:{[t;x] if[t in tables[]; t insert x]};
+//upd:{[t;x] if[t in tables[]; select max  x]};
+upd:{[x;y] if[(x = `Aggregation) &  (0 <  count y 0);
+		.kq.y:y;
+                data:{[input].kq.input:input; `.kq.Aggregation upsert enlist .kq.input} each y;
+		//show("data is ";data);
+		if[1< count .kq.input;
+			Agg :0! select time:max time, maxTradePrice:max maxTradePrice,minTradePrice:min minTradePrice,tradedVolume:sum tradedVolume,maxBid:max maxBid,minAsk:min minAsk by sym from Aggregation upsert .kq.Aggregation;
+			//Agg :select from `Aggregation,.kq.Aggregation;
+			delete from `Aggregation;
+			`Aggregation upsert select time,sym,maxTradePrice ,minTradePrice ,tradedVolume   ,maxBid,minAsk from Agg;
+			.kq.Aggregation:delete from .kq.Aggregation;
+		  ]
+                ];
+
+ };
+
+
 
 
 .u.x:.z.x,(count .z.x)_(.z.x[0];.z.x[2]);
@@ -27,7 +46,7 @@ upd:{[t;x] if[t in tables[]; t insert x]};
         (.[;();:;].) x;
         if[null first y;:()];
         -11!y;
-        system "cd ",1_-10_string first reverse y
+        system "cd ",1_-10_string first reverse y;
    }; 
 
 

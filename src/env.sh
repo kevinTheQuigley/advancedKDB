@@ -15,4 +15,4 @@ export PORT_CEP=6811
 export PORT_FH=6812
 
 export SCHEMA="sym"
-export TPTIMER=100 
+export TPTIMER=2000 

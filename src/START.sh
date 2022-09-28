@@ -9,7 +9,8 @@ if [ $dirName == "advancedKDB" ]; then
 elif [ $dirname == "src" ]; then
   echo "Executing in source directory"
 else
-  echo "Directory not correctly set, please move to either the src advancedKDB directory"
+  echo -e "\n"
+  #echo "Directory not correctly set, please move to either the src advancedKDB directory"
 fi
 
 KDIR=$(pwd)/..
@@ -46,7 +47,7 @@ function RUN_ALL(){
 }
 
 function startTP() {
-	nohup q ./tick.q ${SCHEMA} ${DATADIR}/raw -p ${PORT_TP} -t ${TPTIMER} >> ${DATADIR}/logs/data/tp.log 2>&1 &
+	nohup q ./tick.q ${SCHEMA} ${DATADIR}/logs/raw -p ${PORT_TP} -t ${TPTIMER} >> ${DATADIR}/logs/data/tp.log 2>&1 &
         echo $! > ${DATADIR}/logs/pids/tp.pid
 	echo -e "Starting the TP \n"
  }
