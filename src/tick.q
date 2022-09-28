@@ -9,7 +9,7 @@ system "l ",cdir,"/kdb-common/log4q.q";
 system "l ",cdir,"/kdb-common/src/type.q";
 system "l ",cdir,"/kdb-common/src/time.q";
 system "l ",cdir,"/kdb-common/src/util.q";
-system "l ",cdir,"/kdb-common/src/ns.q";
+system "l ",cdir,"/kdb-common/src/ns1.q";
 system "l ",cdir,"/kdb-common/src/convert.q";
 system "l ",cdir,"/kdb-common/src/cron.q";
 system "l ",cdir,"/kdb-common/src/cargs.q";
