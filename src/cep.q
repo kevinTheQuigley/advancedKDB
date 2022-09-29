@@ -27,7 +27,8 @@ upd:{[x;y] if[x = `Aggregation;
 
 		.kq.Aggregation:delete from .kq.Aggregation
 		];
-	if[(x in `Trade`Quote);x insert y];
+	if[(x in enlist `Trade);`.kq.Trade insert y];
+	if[(x in enlist `Quote);`.kq.Quote insert y];
 
 	//if[(x in `Trade`Quote) && first value max value (d1:select Tot:count i by sym from x)>.kq.lim; 
 	//if[(x in `Trade`Quote) & first value max value (d1:select Tot:count i by sym from x)>.kq.lim; 
@@ -40,11 +41,11 @@ upd:{[x;y] if[x = `Aggregation;
 	//Trade:neg tph"Trade"
 	//Quote:neg tph"Quote"
   
-	AggregationData: 0!((select maxTradePrice:max price,minTradePrice:min price,tradedVolume:sum size by sym from Trade) lj
-	(select maxBid: max bid, minAsk: min ask by sym from Quote));
-	if[(count AggregationData) >1;1+1; delete from `Trade where sym in AggregationData`sym;delete from `Quote where sym in AggregationData`sym]
-
-  tph(".u.upd";`Aggregation;value flip AggregationData); 
+	AggregationData: 0!((select maxTradePrice:max price,minTradePrice:min price,tradedVolume:sum size by sym from .kq.Trade) lj
+	(select maxBid: max bid, minAsk: min ask by sym from .kq.Quote));
+	if[(count AggregationData) >1;1+1; delete from `.kq.Trade where sym in AggregationData`sym;delete from `.kq.Quote where sym in AggregationData`sym];
+	if[(0<count AggregationData);tph(".u.upd";`Aggregation;value flip AggregationData)];
+	//tph(".u.upd";`Aggregation;value flip AggregationData);
    }; 
 
 sub_tbls:(`Trade`Quote);
@@ -56,3 +57,5 @@ setter:{[x]
 
 \t 3000
 .kq.Aggregation:Aggregation;
+.kq.Trade:Trade;
+.kq.Quote:Quote;

@@ -3,7 +3,7 @@ cdir:-4_first (system "pwd");
 logDir : cdir,"/logs";
 system "l ",cdir,"/kdb-common/log4q.q";
 .log4q.a[hopen `$(":",logDir, "/data/fh.log");`DEBUG`INFO`SILENT`WARN`ERROR`FATAL`TEST ]
-
+system "l ./sym.q"
 
 .log.sendToStdOutErr:.log4q.INFO
 
@@ -19,10 +19,10 @@ syms   : `FH.l`FEED.L`FDHNDLR.Y`GM.E`IBM.n /stocks
 prices : syms!100.01 101.02 1.50 100280.04 420.69 
 
 //Setting the number of rows
-numRow : 2
+numRow : .u.tSize;
 
 // Sets the ratio of trades to Quotes to 4:1
-ratio   : 2
+ratio   : 2;
 
 /initiate a change in price from it's previous value
 

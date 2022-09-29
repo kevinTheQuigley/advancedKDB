@@ -6,9 +6,9 @@ dirName=${PWD##*/}
 if [ $dirName == "advancedKDB" ]; then
   cd ./src
   echo "Changing to source directory..."
-elif
-  [$dirname == "src"]; then
-  echo "Executing in source directory"
+#elif
+#  [$dirname == "src"]; then
+#  echo "Executing in source directory"
 else
   echo -e "\n"
   #echo "Directory not correctly set, please move to either the src advancedKDB directory"

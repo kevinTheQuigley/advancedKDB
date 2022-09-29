@@ -94,6 +94,7 @@ tp_tick:{
    };
 
 upd:{[t;x]
+  .kq.xLen:count flip x;
   if[not -16=type first first x;
      if[d<"d"$a:.z.P;
         .z.ts[]
@@ -104,7 +105,7 @@ upd:{[t;x]
          (enlist(count first x)#a),x]
     ];
   t insert x;
-  tbl_counter[t]+:1;
+  tbl_counter[t]+:.kq.xLen;
   if[l;
      l enlist (`upd;t;x);
      j+:1];

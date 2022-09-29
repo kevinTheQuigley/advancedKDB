@@ -17,3 +17,6 @@ Aggregation:([] time  		: `timespan$();
 	  tradedVolume   	: `long$(); 
 	  maxBid     		:`float$(); 
 	  minAsk     		:`float$());
+
+
+.u.tSize:2;

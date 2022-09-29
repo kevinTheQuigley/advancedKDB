@@ -36,13 +36,13 @@ upd:{[x;y] if[(x = `Aggregation) &  (0 <  count y 0);
 
 / end of day: save, clear, hdb reload
 
-
-.u.end:{
-        t:tables`.;
-        t@:where `g=attr each t@\:`sym;
-        .Q.hdpf[`$";",(.u.x 1);hsym `$getenv[`DATADIR],"/hdb";x;`sym];
-        @[;`sym;`g#] each t
-    };
+//Maybe new data shouldn't be saved, it should be loaded from day to day 
+//.u.end:{
+//        t:tables`.;
+//        t@:where `g=attr each t@\:`sym;
+//        .Q.hdpf[`$";",(.u.x 1);hsym `$getenv[`DATADIR],"/hdb";x;`sym];
+//        @[;`sym;`g#] each t
+//    };
 
 
 .u.rep:{
