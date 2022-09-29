@@ -49,7 +49,7 @@ function IS_ACTIVE(){
 			fName=`echo ${file}|sed 's#.*/##'| sed 's/.pid//'`
 			if [[ "$port" != " " && "$port" != "" ]]
 			then 
-				echo $"The $fName process is active on port $port with pid $PID"
+				echo -e $" The $fName process is active on port $port with pid $PID \n"
 			else
 				echo $"The pid is stored for $fName as $PID, but the process is unavailable and so port is blank"
 			fi
@@ -64,18 +64,24 @@ function IS_ACTIVE(){
     fi
 }
 
-read -n1 -p "Do you want to test all processes? [y,n]" doit
+echo -e "\n Do you want to test all processes, or one specific process?"
+echo -e "\n y - Yes, test all processes"
+echo -e "\n n - No, test no processes"
+echo -e "\n o - One, test one specific process\n"
+read -n1 -p "" doit
+
 echo -e "/n"
 case $doit in
-  y|Y) echo -e "yes \n" |RUN_ALL;;
-  n|N) echo no ;;
+  y|Y) echo -e "Yes, Testing one process\n" |RUN_ALL;;
+  n|N) echo -e "No \n";;
+  o|O) echo -e "Testing one process\n " ;;
   *) echo dont know ;;
 esac
 
-if [ $doit == "n" ]
+if [ $doit == "o" ]
 then
 
-	echo -e "Please enter a two letter word for the process you would like to test \n ie for tp -tp \n for filehandler- fh\n for rdb1- r1 \n for rdb2- r2\n for cep-ce "
+	echo -e "\n\nPlease enter a two letter word for the process you would like to test \n ie for tp -tp \n for filehandler- fh\n for rdb1- r1 \n for rdb2- r2\n for cep-ce "
 	read -n2 -ep " " s1
 
 	echo "Checking $KDIR/logs/pids/"
