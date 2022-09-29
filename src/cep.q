@@ -43,7 +43,7 @@ upd:{[x;y] if[x = `Aggregation;
   
 	AggregationData: 0!((select maxTradePrice:max price,minTradePrice:min price,tradedVolume:sum size by sym from .kq.Trade) lj
 	(select maxBid: max bid, minAsk: min ask by sym from .kq.Quote));
-	if[(count AggregationData) >1;1+1; delete from `.kq.Trade where sym in AggregationData`sym;delete from `.kq.Quote where sym in AggregationData`sym];
+	if[(count AggregationData) >0; delete from `.kq.Trade where sym in AggregationData`sym;delete from `.kq.Quote where sym in AggregationData`sym];
 	if[(0<count AggregationData);tph(".u.upd";`Aggregation;value flip AggregationData)];
 	//tph(".u.upd";`Aggregation;value flip AggregationData);
    }; 
