@@ -59,6 +59,8 @@ function IS_ACTIVE(){
                 echo -e "${1} The PID for this process is not stored. Please start via the bash script\n"
                 fi
 	port=" "
+    else
+	    echo $"The PID for this process is not currently stored and so is not in use or hasn't been launched correctly"
     fi
 }
 
