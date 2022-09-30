@@ -45,7 +45,9 @@ function IS_ACTIVE(){
 	port=" "
                 if ps -e -p "$PID" > /dev/null
                 then
-			port=`netstat -taunp  2>/dev/null | grep $PID -m 1 |awk -F ':' '{print $2}'|awk '{print $1}'`
+			#port=`netstat -taunp  2>/dev/null | grep -E '^[^0-9]*$PID' -m 1 |awk -F ':' '{print $2}'|awk '{print $1}'`
+			#port=`netstat -taunp  2>/dev/null | grep -E "^[^1-9]+$PID" -m 1 |awk -F ':' '{print $2}'|awk '{print $1}'`
+			port=`netstat -taunp  2>/dev/null | grep -E " +$PID+\/" -m 1 |awk -F ':' '{print $2}'|awk '{print $1}'`
 			fName=`echo ${file}|sed 's#.*/##'| sed 's/.pid//'`
 			if [[ "$port" != " " && "$port" != "" ]]
 			then 
